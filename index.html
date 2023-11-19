@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Travel and Tourism Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body> 
+  <!-- header -->
+  <header id="header">
+    <nav class="navbar navbar-expand-md bg navbar-dark"> <div  class="locn">
+      
+          <button onclick="geolocation()">Get Location</button>
+      <p id="out"></p>
+      <p id="weather"></p>
+      
+      </div>
+        
+     <div class="logo">
+        <img src="img/logo.png" alt="" class="logo_img">
+        <div class="logo_name mx-1">Wanderhub</div></div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+ <i class="fa-solid fa-bars"></i></button>
+            <div id="search">
+           <div class="dropdown">
+                <select>
+                   <option>Search Country</option>
+                   <option>Delhi</option>
+                   <option>Amsterdam</option>
+                </select>
+              </div></div>
+   <div class="collaps navbar-collapse" id="btn">
+    <ul class="navbar-nav ">
+      <li class="nav-item" >
+        <a href="#home" class="nav-link mx-3 ">Home</a>
+      </li>
+       <li class="nav-item">
+        <a href="#trending" class="nav-link mx-3  ">Trending</a>
+      </li>
+       <li class="nav-item">
+        <a href="#services" class="nav-link  mx-3  ">Services</a>
+      </li>
+       <li class="nav-item">
+        <a href="#packages" class="nav-link  mx-3  ">Packages</a>
+      </li>
+       <li class="nav-item">
+        <a href="#contact" class="nav-link  mx-3  ">Contact </a>
+      </li>
+      </div>
+      <div class="nav-item login">
+  <i class="fa-solid fa-user-large mx-3 fs-5"></i>
+  <br>
+   </div>
+ <button type="button" class="btn btn-success">Book Now</button></ul>
+
+ <div class="dark_mode">
+ <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+  </div>   
+  
+</nav></header>
+
+<!-- container -->
+<section id="home">
+   <span id="coupon">
+  <button onClick="closeCoupon()">&times;</button>
+  </span>
+<div class="cont ">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h1 class="hed">Make Your Tour Amazing With Us</h1>
+      <img src="img/travel-banner5.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <h1 class="hed">Make Your Tour Amazing With Us</h1>
+      <img src="img/4.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <h1 class="hed">Make Your Tour Amazing With Us</h1>
+      <img src="img/travel 3.png" class="d-block w-100" alt="...">
+    </div>
+
+ <div class=" header__form">
+          <form action="/">
+            <div class="input__group">
+              <label for="destination">Where do you want to go?</label>
+              <input type="text" placeholder="Country, ZIP" />
+            </div>
+            <div class="input__group">
+              <label for="checkIn">Check In</label>
+              <input  type="date" placeholder="Choose a date" />
+            </div>
+            <div class="input__group">
+              <label for="CheckOut">Check Out</label>
+              <input type="date" placeholder="Choose a date" />
+            </div>
+            <div class="input__group">
+              <label for="guests">Guests</label>
+              <input type="number" placeholder="Number of guests" />
+            </div>
+           <button type="button" class="btn btn-danger">CHECK AVAILABILITY</button>
+          </form>
+        </div>
+    </div>
+</div></div></section>
+
+<!-- Trending -->
+<section id="trending">
+  <div class="trending">Trending Places in 2023</div>
+<div class="row container-fluid">
+ <div class="card" style="width: 18rem;">
+  <img src="img/trend1.jpg" class="card-img-top" alt="..." height="300px">
+  <div class="card-body">
+    <h5 class="card-title">Manali</h5>
+    <h6 class="location"><i class="fa-solid fa-location-dot"></i>India</h6>
+    <p class="about">A major tourist spot of North India, Manali is known for its excellent skiing conditions with skiing enthusiasts visiting from all over the country.</p>
+    <a href="#" class="btn btn-success explore">Explore More</a>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="img/trend2.webp" class="card-img-top" alt="..." height="180px">
+  <div class="card-body">
+    <h5 class="card-title">Bali</h5>
+    <h6 class="location"><i class="fa-solid fa-location-dot"></i>Indonesia</h6>
+    <p>Bali is very popular with tourists due to its stunning natural beauty, rich cultural heritage, affordability, and warm hospitality.</p>
+    <a href="#" class="btn btn-success explore mt-3">Explore More</a>
+  </div>
+</div>
+
+ <div class="card" style="width: 18rem;">
+  <img src="img/trend3.jpg" class="card-img-top" alt="..." height="180px">
+  <div class="card-body">
+    <h5 class="card-title">Leh</h5>
+    <h6 class="location"><i class="fa-solid fa-location-dot"></i>India</h6>
+    <p>Prepare to be wooed by the mesmerizing mountains of Leh. You will love sightseeing and the surreal vistas of snow-capped mountains. </p>
+    <a href="#" class="btn btn-success explore mt-3">Explore More</a>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="img/trend4.webp" class="card-img-top" alt="..." height="180px">
+  <div class="card-body">
+    <h5 class="card-title">Tower Bridge</h5>
+    <h6 class="location"><i class="fa-solid fa-location-dot"></i>London</h6>
+    <p>Tower Bridge, a movable bridge, is among London's most iconic sights. It is a symbolic bridge where the two horizontal walkways join at the upper level. </p>
+    <a href="#" class="btn btn-success explore mb-2">Explore More</a>
+  </div>
+</div>
+</div>
+</section>
+<!-- services -->
+<section id="services">
+  <div class="service">Services</div>
+ <div class="row container-fluid">
+
+    <div class="card service_card" style="width: 18rem;">
+ <i class="fas fa-hiking"></i>
+  <div class="card-body about-service">
+    <h5>Adventures
+    </h5>
+    <p class="card-text ">An adventure is an exciting experience or undertaking that is typically bold, sometimes risky.</p>
+  </div>
+</div>
+ <div class="card service_card" style="width: 18rem;">
+    <i class="fas fa-plane"></i>
+  <div class="card-body about-service">
+    <h5>Travels
+    </h5>
+    <p class="card-text ">Travel exposes us to different cultures and ancient traditions and through these authentic encounters, we learn to embrace and celebrate both our similarities and our differences.</p>
+  </div>
+</div>
+ <div class="card service_card" style="width: 18rem;">
+  <i class="fas fa-utensils"></i>
+  <div class="card-body about-service">
+    <h5>Food Tour
+    </h5>
+    <p class="card-text ">A well-balanced diet provides all of the energy yo need to keep active throughout the day</p>
+  </div>
+</div>
+ <div class="card service_card" style="width: 18rem;">
+ <i class="fas fa-hotel"></i>
+  <div class="card-body about-service">
+    <h5>Affordable Hotels
+    </h5>
+    <p class="card-text "> In terms of hotel star ratings, 1- and 2-star hotels are considered budget accommodations.</p>
+  </div>
+</div>
+ </div>
+</section>
+<!-- packages -->
+
+    <section class="packages" id="packages">
+      <div class="container">
+        
+        <div class="package">
+          Packages
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+<a href="#places1" >
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+          <img src="img/package1.jpg" alt="" width="360px ">
+              <div class="card-body">
+                <h3 style="color: black;">India</h3>
+                <p style="color: black;">India is known for its rich cultural heritage and an element of mysticism, which is why tourists come to India to experience it for themselves. </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6 style="color: black;">Price: <strong>$500</strong></h6>
+                <a href="#book">Book Now</a>
+              </div></div>
+            </div></a>
+</div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/package2.jpg" alt="" height="200px">
+              <div class="card-body">
+                <h3>America</h3>
+                <p> From beautiful beaches to a rich and natural landscape of mountains and forests, it is one of the most beautiful and fascinating countries to explore.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$800</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/package3.jpg" alt="" height="180px">
+              <div class="card-body">
+                <h3>United Kingdom</h3>
+                <p> There are plenty of amazing things whether it's iconic landmarks, world-class restaurants or international music festivals.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$950</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/package4.jpeg" alt="">
+              <div class="card-body">
+                <h3>Italy</h3>
+                <p>Italy, country of south-central Europe, occupying a peninsula that juts deep into the Mediterranean Sea.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$550</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/package5.jpg" alt="">
+              <div class="card-body">
+                <h3>Sri Lanka</h3>
+                <p>Sri Lanka has numerous tourist attractions with areas of natural scenic beauty, primarily including mountainous terrains, agricultural landscapes, waterfalls..</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$400</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/package6.jpg" alt="" height="180px">
+              <div class="card-body">
+                <h3>Singapore</h3>
+                <p>Boasting awe-inspiring architecture, world-class museums, never-ending shopping malls, famous gardens, and a culinary scene that's second to none,</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$900</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <button type="button" class="btn btn-warning">Explore More</button>
+<section id="contact">
+  <footer>
+    <div class="footer">
+      <h2>Wanderhub</h2>
+       <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</section>
+          
+<script>
+//
+window.onload = onloadPage()
+  
+    function onloadPage() {
+    document.getElementById('coupon').style.visibility = 'visible';
+  document.getElementById('home').style.opacity = '0.6'
+    document.getElementById('trending').style.opacity = '0.6'
+}
+
+function closeCoupon() {
+    document.getElementById('coupon').style.visibility = 'hidden';
+    document.getElementById('home').style.opacity = '1'
+    document.getElementById('trending').style.opacity = '1'
+}
+const toggle = document.getElementById('toggleDark');
+
+const header = document.getElementById('header');
+
+
+toggle.addEventListener('click',function(){
+    this.classList.toggle("bi-brightness-high-fill");
+    if(this.classList.toggle("bi-moon")){
+    header.style.background ="black"
+    header.style.color ="white"
+    header.style.transition='1s'
+    }
+    else{
+    header.style.background ="white";
+    header.style.color ="black"
+    header.style.transition='1s'
+    }
+})
+
+
+ var x = document.getElementById('out');
+  var y = document.getElementById('weather');
+
+            function geolocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                }else{
+                    x.innerText = "Geo Not Supported"
+                }
+            }
+
+            function showPosition(data){
+                console.log(data)
+                let lat = data.coords.latitude;
+                let lon = data.coords.longitude;
+                x.innerHTML = `Latitude is ${lat} and longitude is ${lon}`
+                const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+                fetch(url,{method:'GET'})
+           
+                .then((res) =>  res.json())
+              
+                .then((data) => {
+                    console.log(data)
+                    let cityName = data.city.name;
+                    let temp = data.list[0].temp.day+" °C"
+                    y.innerHTML=`weather of ${cityName} is ${temp}`
+                })
+            }
+</script>
+
+<!-- <script>
+  window.onload = onloadPage()
+</script> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- <script src="script.js"></script> -->
+
+
+
+</body>
+</html>

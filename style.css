@@ -1,0 +1,310 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.bi-brightness-high-fill{
+  font-size: 35px;
+  cursor: pointer;
+  position: relative;
+  top: 10%;
+  right: 1%;
+}
+
+header {
+  width: 100%;
+}
+
+.bg {
+
+  width: 100%;
+}
+.logo {
+  display: flex;
+  margin-left: 8%;
+}
+.logo_img {
+  width: 10%;
+  height: 10%;
+  background: #000;
+  border-radius: 50%;
+}
+
+.logo_name {
+  
+  color:rgb(64, 255, 0);
+  font-size: 2rem;
+  margin-left: 1%;
+  margin-top: 1%;
+  font-weight: bolder;
+}
+
+#search {
+  display: flex;
+  margin-left: -100px;
+}
+.nav-item {
+  color: rgb(0, 255, 26);
+  font-size: 1.5em;
+
+}
+.nav-item a{
+  font-size: 20px;
+  color: rgb(64, 255, 0);
+  font-weight: bold;
+  
+}
+.locn button{
+list-style-type: none;
+      margin-top: -0.5%;
+    margin-left: 0.2%;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color:rgb(64, 255, 0);
+  border-radius: 8px;
+  position: absolute;
+  margin-right:1% ;
+  font-size: 14px;
+  
+}
+.locn #out{
+  color: #000;
+   font-size: 13px;
+   transform: translate(26px, 33px);
+   
+}
+.locn #weather{
+  transform: translate(23px, 14px);
+  color: #000;
+  font-size: 13px;
+
+}
+
+.login .fa-user-large{
+  
+  color:rgb(64, 255, 0);
+}
+
+
+.nav-item:hover{
+background-color: rgb(198, 196, 192);
+}
+.fa-solid {
+  color: rgb(226, 152, 25)
+}
+
+.btn {
+  margin-right: 7%;
+}
+.d-block {
+  width: 100%;
+  height: 60vh;
+}
+.carousel-item {
+  position: relative;
+}
+.hed {
+  margin-top: 5%;
+  margin-left: 25%;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: bolder;
+  position: absolute;
+}
+.header__form {
+  position: absolute;
+  width: 70%;
+  /* background-color: rgb(0 0 0 / 52%); */
+  background-color: rgb(0 0 0 / 52%);
+  margin-top: 15%;
+  margin-left: 15%;
+  display: inline;
+}
+.input__group {
+  display: inline-block;
+}
+.header__container {
+  padding: 5rem 1rem 10rem;
+}
+
+.header__form {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.header__form form {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.input__group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input__group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.input__group input {
+  max-width: 140px;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.trending {
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.card {
+  margin-left: 5%;
+  width: 70%;
+  height: 60vh !important;
+  box-shadow: 3px 3px 40px grey, -3px -3px 10px grey;
+  margin-bottom: 3%;
+}
+.card-img-top {
+  width: 100%;
+  margin-top: 4%;
+  border-radius: 2%;
+}
+.card-body p {
+  font-size: 0.9rem;
+}
+.fa-location-dot {
+  color: rgb(0, 0, 0);
+  margin-right: 2%;
+}
+.explore {
+  margin-left: 23%;
+}
+.service,
+.package {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+.service_card {
+  height: 40vh !important;
+    box-shadow: 3px 3px 10px goldenrod, -3px -3px 10px goldenrod !important;
+}
+.fa-hiking,
+.fa-plane,
+.fa-utensils,
+.fa-hotel {
+  color: rgb(220, 43, 34);
+  margin-top: 5%;
+  margin-left: 40%;
+  font-size: 3rem;
+}
+.about-service {
+  background-color: rgb(255, 204, 0);
+  margin-bottom: 4%;
+  margin-top: 2%;
+  border-radius: 3%;
+}
+.about-service h5 {
+  text-align: center;
+  font-weight: bold;
+}
+.about-service p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.packages .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.packages .card img {
+  border-radius: 5px;
+}
+.packages .card .card-body {
+  background: transparent;
+}
+.packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.packages .card .card-body p {
+  font-size: 15px;
+}
+.checked {
+  color: #ffa500;
+}
+.star i {
+  font-size: 15px;
+}
+.packages .card .card-body h6 {
+  font-size: 20px;
+}
+.packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+}
+.btn-warning {
+  margin-left: 40%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+}
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+.footer {
+  margin-left: 40%;
+}
+.footer h2 {
+  color: white;
+  font-weight: bolder;
+}
+.social-links i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover {
+  background: #ffa500;
+}
+#coupon{
+  height: 55vh;
+  width: 30%;
+background-image: url("img/coupon.png");
+  position:absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 3%;
+  margin-left: 35%;
+  z-index: 100;
+  box-shadow: 7px 9px 12px  black, -7px -9px 12px  black;
+  visibility: hidden;
+}

@@ -1,0 +1,20 @@
+ db.location.insert(
+ [
+      {
+        "location_id": 1,
+        "country_name": "India"
+      },
+      {
+        "location_id": 4,
+        "country_name": "America"
+      },
+      {
+        "location_id": 8,
+        "country_name": "Sri Lanka"
+      },
+      {
+        "location_id": 13,
+        "country_name": "Italy"
+      }
+    ])
+
